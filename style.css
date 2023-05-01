@@ -1,3 +1,45 @@
+section{
+    padding-top: 50px;
+}
+
 .navbar{
     box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home h1{
+    font-size: 72px;
+}
+
+.home h3{
+    font-size: 48px;
+}
+
+.btn.button{
+    border: 3px solid #1d1d1d;
+    border-radius: 24px;
+}
+
+.btn.button:hover{
+    background-color: #1d1d1d;
+    color: #FFFF;
+}
+
+.home .arrow img{
+    width: 40px;
+} 
+
+#arrow{
+    animation: 2s upDown infinite;
+}
+
+@keyframes upDown{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
