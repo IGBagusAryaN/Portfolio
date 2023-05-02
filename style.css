@@ -1,5 +1,18 @@
 section{
     padding-top: 58px;
+    position: relative;
+}
+
+section::before{
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    opacity: 0.25;
+    color: gray;
+    font-weight: 700;
+    position: absolute;
+    top: -50px;
+    left: -20px;
 }
 
 .navbar{
@@ -31,6 +44,28 @@ section{
 #arrow{
     animation: 2s upDown infinite;
 }
+
+.about::before{
+    content: 'About';
+}
+.about{
+    margin-top: 58px;
+}
+
+.about-exp-item{
+    margin-top: 32px;
+}
+
+.about-exp-item-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-exp-item-detail{
+    display: none;
+}
+
 
 @keyframes upDown{
     0% {
