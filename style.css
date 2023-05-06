@@ -1,3 +1,6 @@
+body{
+    padding-inline: 100px;
+}
 section{
     padding-top: 58px;
     position: relative;
@@ -15,9 +18,9 @@ section::before{
     left: -20px;
 }
 
-.navbar{
+/* .navbar{
     box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .home h1{
     font-size: 72px;
@@ -28,7 +31,7 @@ section::before{
 }
 
 .btn.button{
-    border: 3px solid #1d1d1d;
+    border: 2px solid #1d1d1d;
     border-radius: 24px;
 }
 
@@ -49,7 +52,7 @@ section::before{
     content: 'About';
 }
 
-.about, .work{
+.about, .work, .contact{
     margin-top: 128px;
 }
 
@@ -70,6 +73,7 @@ section::before{
 
 .work::before{
     content: 'Work';
+    top: 10px;
 }
 
 .work-img{
@@ -78,7 +82,7 @@ section::before{
     grid-template-areas: 
     "work-1 work-2"
     "work-3 work-3";
-    gap: 12px;
+    gap: 7px;
 }
 
 .work-img img{
@@ -131,6 +135,22 @@ section::before{
 }
 
 
+.contact{
+    padding-bottom: 128px;
+}
+
+.contact::before{
+    content: 'Contact';
+}
+
+.contact-form{
+    border: 1px solid gray;
+    padding: 64px 32px;
+}
+
+.form-label{
+    font-weight: 700;
+}
 
 
 

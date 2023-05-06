@@ -21,13 +21,13 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
              
             </ul>
@@ -40,14 +40,14 @@
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Bagus Arya</h1>
                 <p>Im FrontEnd Developer Based In Indonesia</p>
-                <a class="btn button" href="">Resume</a>
+                <a class="btn button"href="">Resume</a>
             </div>
             <div class="col-5">
-                <img src="./images/potrait.png" alt="" width="500">
+                <img src="./images/potrait.png" alt="" width="450">
             </div>
         </div>
         <div class="arrow w-100 d-flex align-items-center flex-column">
-          <a class="text-decoration-none text-dark mt-3" href="#about">More Info</a>
+          <a class="text-decoration-none text-dark mt-5" href="#about">More Info</a>
           <img id="arrow" class="mt-1" src="./images/arrow.svg" alt="">
         </div>
     </section>
@@ -67,7 +67,7 @@
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Frontweb Developer</h5>
+              <h5>Software Enginner</h5>
               <p>Coding Studio (20xx)</p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">More Info</button>
@@ -77,7 +77,7 @@
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Frontweb Developer</h5>
+              <h5>Design web</h5>
               <p>Coding Studio (20xx)</p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">More Info</button>
@@ -101,6 +101,47 @@
           <div class="work-img-item" id="work-3">
             <img src="images/work-3.png" alt="work 3"  width="50">
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact container ">
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nemo voluptatum ipsam quod tempora magni culpa sequi amet adipisci cumque optio accusantium beatae, deleniti tempore labore nobis iusto molestiae necessitatibus vel! Ipsam ducimus, dolor non accusantium harum dolorum excepturi doloribus, repellat aperiam unde possimus numquam nisi perferendis mollitia ea omnis?</p>
+          <div class="row ">
+            <div class="col d-flex align-items-center ">
+              <img src="images/Facebook.svg" alt="Facebook icon" width="50">
+              <span>Bagus Arya</span>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="images/Instagram.svg" alt="Instagram icon" width="50">
+              <span>@bagusaryaa_</span>
+            </div>
+            <div class="col d-flex align-items-center">
+              <img src="images/Twitter.svg" alt="Twitter icon" width="50"> 
+              <span>@arziiu</span>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <form class="contact-form"  onsubmit="onFormSubmit(event)">
+            <div class="mb-3">
+              <label for="inp_email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inp_email" placeholder="example123@gmail.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="inp_subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="inp_message" class="form-label">Message</label>
+              <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <button type="submit" class="btn button">Submit</button>
+            </div>
+            
+          </form>
         </div>
       </div>
     </section>
