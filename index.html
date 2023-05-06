@@ -35,21 +35,21 @@
         </div>
       </nav>
     <section id="home" class="home container">
-        <div class="row d-flex align-items-center">
-            <div class="col-7">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-7">
                 <h3 class="fw-semibold">Hi! I am</h3>
                 <h1 class="fw-bold">Bagus Arya</h1>
                 <p>Im FrontEnd Developer Based In Indonesia</p>
                 <a class="btn button"href="">Resume</a>
             </div>
-            <div class="col-5">
-                <img src="./images/potrait.png" alt="" width="450">
+            <div class="col-12 col-md-5 d-flex justify-content-md-end justify-content-center">
+                <img src="./images/potrait.png" alt="">
             </div>
         </div>
-        <div class="arrow w-100 d-flex align-items-center flex-column">
-          <a class="text-decoration-none text-dark mt-5" href="#about">More Info</a>
+        <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column">
+          <div class=" text-dark mt-5" >More Info</div>
           <img id="arrow" class="mt-1" src="./images/arrow.svg" alt="">
-        </div>
+        </a>
     </section>
     <section id="about" class="about container">
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum esse ducimus sequi neque quibusdam repellendus delectus aliquid, accusantium dolores facere reiciendis laudantium placeat aut odio omnis iste deleniti? Dignissimos, molestias.</p>
@@ -88,10 +88,10 @@
     </section>
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-md-6">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi totam earum doloribus quo magnam cupiditate nisi, alias placeat hic maxime incidunt vero dolore ipsam praesentium vel soluta aut, rerum laborum cum, reprehenderit dignissimos explicabo veritatis omnis eveniet. Laudantium inventore quos esse deserunt obcaecati assumenda eum! Corrupti unde rerum nihil quisquam.</p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-md-5 work-img">
           <div class="work-img-item" id="work-1">
             <img src="images/work-1.png" alt="work 1"  width="50">
           </div>
@@ -106,24 +106,24 @@
     </section>
     <section id="contact" class="contact container ">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nemo voluptatum ipsam quod tempora magni culpa sequi amet adipisci cumque optio accusantium beatae, deleniti tempore labore nobis iusto molestiae necessitatibus vel! Ipsam ducimus, dolor non accusantium harum dolorum excepturi doloribus, repellat aperiam unde possimus numquam nisi perferendis mollitia ea omnis?</p>
           <div class="row ">
             <div class="col d-flex align-items-center ">
-              <img src="images/Facebook.svg" alt="Facebook icon" width="50">
+              <img src="images/Facebook.svg" alt="Facebook icon" class="w-25">
               <span>Bagus Arya</span>
             </div>
             <div class="col d-flex align-items-center">
-              <img src="images/Instagram.svg" alt="Instagram icon" width="50">
+              <img src="images/Instagram.svg" alt="Instagram icon" class="w-25">
               <span>@bagusaryaa_</span>
             </div>
             <div class="col d-flex align-items-center">
-              <img src="images/Twitter.svg" alt="Twitter icon" width="50"> 
+              <img src="images/Twitter.svg" alt="Twitter icon" class="w-25"> 
               <span>@arziiu</span>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <form class="contact-form"  onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>
