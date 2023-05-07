@@ -170,6 +170,10 @@ section::before{
     section::before{
         left: 10px;
     }
+    
+    .contact span{
+        font-size: 12px;
+    }
 }
 
 @keyframes upDown{
